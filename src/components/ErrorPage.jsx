@@ -6,8 +6,7 @@ function ErrorPage (){
   };
   return(
     <div>
-      <h2>You are bad!!!!</h2>
-      <span style={badStyle}>🔥•</span>
+      <span style={badStyle}>🔥 Hey you should not be here, go back home. 🔥</span>
     </div>
   );
 }

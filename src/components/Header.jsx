@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import PropTypes from 'prop-types';
 import AppBar from '@material-ui/core/AppBar';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
@@ -15,6 +14,7 @@ function Header(){
   const leftStyle = {
     display: 'flex',
     alignItems: 'center',
+    color: 'white',
   };
 
   const linkStyle = {
@@ -27,7 +27,7 @@ function Header(){
       <AppBar position="static">
         <div style={appStyle}>
           <div style={leftStyle}>
-            <IconButton>
+            <IconButton color="secondary">
               <MenuIcon/>
             </IconButton>
             <h1>Night Market !</h1>

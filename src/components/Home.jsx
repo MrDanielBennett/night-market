@@ -1,9 +1,13 @@
 import React from 'react';
+import '../index.css';
+import EventList from './EventList';
 
 function Home(){
   return(
-    <div>
-      <h2>Welcome to the Night Market</h2>
+    <div className='homeImage'>
+      <h2>Welcome to Night Market!</h2>
+      <h3>Our Market Schedule:</h3>
+      <EventList/>
     </div>
   );
 }
