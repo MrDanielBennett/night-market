@@ -33,9 +33,34 @@ h2{
   position: relative;
   top: -30%;
   left: -15%;
-  transform: translate(-50%, -50%);
   animation-name: run;
   animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.dog {
+  transform: translate(-50%, -350px);
+}
+
+@keyframes dealBlink {
+  0% {opacity: 0;}
+  70% {opacity: 0;}
+  71% {opacity: 1;}
+  100% {opacity: 1;}
+}
+
+.deals0 {
+  opacity: 1;
+  position: relative;
+  left: 0;
+  transform: translate(-20px, 90px) rotate(21.8deg);
+  color: #ff0080;
+  font-family: 'Comic Sans MS';
+  font-size: 3em;
+  text-shadow: 2px 2px #ffff00;
+  animation-name: dealBlink;
+  animation-duration: 1.342s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
