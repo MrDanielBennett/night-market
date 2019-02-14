@@ -13,6 +13,10 @@ h2{
   margin-top: 0px;
 }
 
+.sans{
+  font-family: 'Comic Sans MS';
+}
+
 .whiteButton{
   color: white;
 }
@@ -40,27 +44,50 @@ h2{
 }
 
 .dog {
-  transform: translate(-50%, -350px);
+  position: absolute;
+  transform: translate(-50%, -50%);
 }
 
-@keyframes dealBlink {
+@keyframes dealBlink0 {
   0% {opacity: 0;}
   70% {opacity: 0;}
   71% {opacity: 1;}
   100% {opacity: 1;}
 }
 
+@keyframes dealBlink1 {
+  0% {opacity: 1;}
+  25% {opacity: 1;}
+  26% {opacity: 0;}
+  100% {opacity: 0;}
+}
+
 .deals0 {
   opacity: 1;
-  position: relative;
+  position: absolute;
   left: 0;
-  transform: translate(-20px, 90px) rotate(21.8deg);
+  transform: translate(10px, -170px) rotate(21.8deg);
   color: #ff0080;
   font-family: 'Comic Sans MS';
   font-size: 3em;
   text-shadow: 2px 2px #ffff00;
-  animation-name: dealBlink;
-  animation-duration: 1.342s;
+  animation-name: dealBlink0;
+  animation-duration: 1.21s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.deals1 {
+  opacity: 1;
+  position: absolute;
+  left: 0;
+  transform: translate(-136px, -170px) rotate(-13.8deg);
+  color: #37ff00;
+  font-family: 'Comic Sans MS';
+  font-size: 2.6em;
+  text-shadow: 2px 2px #FF0000;
+  animation-name: dealBlink1;
+  animation-duration: 1.34s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
